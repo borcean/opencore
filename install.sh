@@ -4,12 +4,12 @@
 # Beaverton School District
 
 # USAGE
-# bash -c "$(curl -fsSL https://opencore.borcean.xyz)"
+# bash -c "$(curl https://raw.githubusercontent.com/borcean/opencore/main/install.sh)"
 
 
 # Set to location where OpenCore disk images are located
 # script expects files named like: opencore-iMac14,1.dmg
-BINARY_HOST="https://gist.githubusercontent.com/borcean/201d069a0e9243e0f1c0bb7def60354b/raw/"
+BINARY_HOST="https://raw.githubusercontent.com/borcean/opencore/main/"
 
 if [ "$(uname -s)" != "Darwin" ]; then
    echo "Only supports macOS, exiting..." 1>&2
